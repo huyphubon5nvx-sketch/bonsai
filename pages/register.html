@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/login.css">
+</head>
+<body>
+    <div class="layer">
+        <form action="" id="login-form">
+            <h1>Đăng ký</h1>
+            <label for="email" class="labut">Email:</label>
+            <input type="email" name="email" id="email" class="labut" placeholder="Nhập email"/>
+            <span style="color: red;font-size:12px;" id="email-error"> </span>
+
+            <label for="password" class="labut">Mật khẩu:</label>
+            <input type="password" name="password" id="password" class="labut" placeholder="Nhập mật khẩu"/>
+            <span style="color: red;font-size:12px;" id="pass-error"> </span>
+            
+            
+            <label for="password1" class="labut">Nhập lại mật khẩu:</label>
+            <input type="password1" name="password1" id="password1" class="labut" placeholder="Nhập lại mật khẩu"/>
+            <span style="color: red;font-size:12px;" id="pass1-error"> </span>
+            <button type="submit" class="login-btn" id="register-btn" >Đăng ký</button>
+            <label for="register">Đã có tài khoản?<span><a href="./login.html">Đăng nhập</a></span></label>
+
+    </div>
+    <script type="module" src="../assets/js/firebase_config.js"></script>
+    <script type="module" src="../assets/js/register.js"></script>
+</body>
+</html>
