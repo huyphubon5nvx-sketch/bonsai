@@ -10,7 +10,7 @@
       <header id="header">
          <div class="container">
             <div class="logo">
-               <img src="../assets/images/logo.png" alt="" />
+               <img src="assets/images/logo.png" alt="" />
             </div>
             <div class="navigation">
                <div class="nav-left">
@@ -43,7 +43,7 @@
                </div>
             </div>
             <div class="right-column">
-               <img src="../assets/images/logotree.png" alt="" />
+               <img src="assets/images/logotree.png" alt="" />
             </div>
          </div>
       </div>
@@ -61,7 +61,7 @@
       <div id="content">
          <div class="container">
             <div class="right-column">
-               <img  src="../assets/images/making-of-bonsai-trees.jpg" alt="" />
+               <img  src="assets/images/making-of-bonsai-trees.jpg" alt="" />
             </div>
 
             <div class="left-column">
@@ -128,7 +128,7 @@ Praesent at sapien est. Mauris a purus turpis. Pellentesque porttitor ullamcorpe
 
             </div>
             <div class="right-column">
-               <img  class="img-tree" src="../assets/images/hobby-bonsai-a-man-is-watering.jpg" alt="" />
+               <img  class="img-tree" src="assets/images/hobby-bonsai-a-man-is-watering.jpg" alt="" />
             </div>
          </div>
       </div>
@@ -159,7 +159,7 @@ Praesent at sapien est. Mauris a purus turpis. Pellentesque porttitor ullamcorpe
       <!-- Blog 1 -->
       <div class="blog-card">
         <div class="blog-img">
-          <img src="../assets/images/making-of-bonsai-trees-handmade-accessories-wire.jpg" alt="Bonsai 1">
+          <img src="./assets/images/making-of-bonsai-trees-handmade-accessories-wire.jpg" alt="Bonsai 1">
           <div class="date-box">
             <span class="day">02</span>
             <span class="month">Mar</span>
@@ -175,7 +175,7 @@ Praesent at sapien est. Mauris a purus turpis. Pellentesque porttitor ullamcorpe
       <!-- Blog 2 -->
       <div class="blog-card">
         <div class="blog-img">
-          <img src="../assets/images/japanese-juniper-bonsai-tree-on-hand.jpg" alt="Bonsai 2">
+          <img src="./assets/images/japanese-juniper-bonsai-tree-on-hand.jpg" alt="Bonsai 2">
           <div class="date-box">
             <span class="day">02</span>
             <span class="month">Mar</span>
@@ -191,7 +191,7 @@ Praesent at sapien est. Mauris a purus turpis. Pellentesque porttitor ullamcorpe
       <!-- Blog 3 -->
       <div class="blog-card">
         <div class="blog-img">
-          <img src="../assets/images/deciduous-bonsai-with-buds-and-thick-trunk-in-a-po.jpg" alt="Bonsai 3">
+          <img src="./assets/images/deciduous-bonsai-with-buds-and-thick-trunk-in-a-po.jpg" alt="Bonsai 3">
           <div class="date-box">
             <span class="day">02</span>
             <span class="month">Mar</span>
@@ -213,7 +213,7 @@ Praesent at sapien est. Mauris a purus turpis. Pellentesque porttitor ullamcorpe
       <!-- Cột 1: Logo và mô tả -->
       <div class="footer-box">
         <h2 class="logo">
-          <img src="../assets/images/LOGO2-1-1024x270.png" alt="logo" class="logo-icon"> 
+          <img src="./assets/images/LOGO2-1-1024x270.png" alt="logo" class="logo-icon"> 
         </h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
       </div>
@@ -256,16 +256,16 @@ Praesent at sapien est. Mauris a purus turpis. Pellentesque porttitor ullamcorpe
   </footer>
 
   
-  <script type="module" src="../assets/js/firebase_config.js"></script> 
-  <script type="module" src="../assets/js/auth.js"></script>
-  //là nơi khỏi tạo cái app gửi về firebase của google
-   <script type="module" src="../assets/js/product.js"></script>
-   <script type="module">
-        import { addToCart } from "../assets/js/cart.js"
-        window.addToCart = addToCart
-        import { renderProducts } from "../assets/js/product.js";
+<script type="module" src="./assets/js/firebase_config.js"></script>
+<script type="module" src="./assets/js/auth.js"></script>
+<script type="module" src="./assets/js/product.js"></script>
 
-        renderProducts("product-list")
-      </script>
+<script type="module">
+  import { addToCart } from "./assets/js/cart.js";
+  import { renderProducts } from "./assets/js/product.js";
+
+  window.addToCart = addToCart;
+  renderProducts("product-list");
+</script>
    </body>
    </html>
